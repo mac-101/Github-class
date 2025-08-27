@@ -15,3 +15,18 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+.marquee {
+  overflow-xgi: hidden;
+  whitespace: nowrap;
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(220%); }
+  100% { transform: translateX(-100%); }
+}
