@@ -13,27 +13,37 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Federant&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
     <style type="text/tailwindcss">
         @theme {
             --color-background: #0c003c;
             --color-btn: #6943f1;
+            --color-btn-hover: rgb(221, 66, 87);
         }
     </style>
 </head>
 
 <body class="bg-background">
 
-    <nav class="pt-7 px-4 md:px-8">
+    <nav class="pt-7 mx-[2rem] md:mx-[4rem]">
         <div class="flex items-center justify-between">
-            <div class="w-[60px] md:w-[70px]">
+            <div class="w-[40px] md:w-[65px]">
                 <img src="logo.png" alt="logo" class="w-full h-auto" />
             </div>
-            <div class="hidden sm:flex gap-4">
-                <button class="bg-btn text-white py-2 px-5 rounded-3xl text-[15px]">
+            <div id="icon" class=" flex sm:hidden"></div>
+            <div id="btn" class="hidden sm:flex gap-4 items-center">
+                <button
+                    class="hover:text-background hover:bg-btn-hover bg-btn text-white py-2 px-5 rounded-3xl text-[14px]">
                     Get Access <i class="ri-arrow-right-line"></i>
                 </button>
-                <button class="bg-btn text-white py-2 px-5 rounded-3xl text-[15px]">
-                    Get Access <i class="ri-arrow-right-line"></i>
+                <button
+                    class="hover:text-background hover:bg-btn-hover bg-btn text-white py-2 px-5 rounded-3xl text-[14px]">
+                    Sponsor <i class="ri-arrow-right-line"></i>
                 </button>
             </div>
         </div>
@@ -42,27 +52,20 @@
 
     <!-- hero section -->
 
-    <section>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-            <h1
-                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-gray-400 md:text-5xl lg:text-6xl ">
-                SMFest Abuja AFRICA UNLOCKED</h1>
-            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">Here at
-                Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
-                drive economic growth.</p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+    <section id="hero">
+        <div class="py-5 text-sm/3 px-7 lg:mt-20 mt-60 mx-auto max-w-screen-xl md:text-center lg:py-16">
+            <h1 class="mb-6 text-[40px] font-bold tracking-tight leading-none text-white md:text-[87px]">
+                SMFEST ABUJA </h1>
+            <h1 class="text-[2rem] font-bold tracking-tight leading-none text-white md:text-[87px]">
+                AFRICA UNLOCKED</h1>
+            <div class="grid grid-cols-2 mt-12 md:px-3 justify-center gap-6">
                 <a href="#"
-                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                    Get started
-                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 5h12m0 0L9 1m4 4L9 9" />
-                    </svg>
+                    class="py-[16px] md:py-6 text-center text-[16px] font-bold focus:outline-none bg-yellow-500  rounded-[15px] text-background ">
+                    Get Ticket
                 </a>
                 <a href="#"
-                    class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                    Learn more
+                    class="py-[16px] md:py-6 text-center text-[20px] md:text-[16px] font-bold focus:outline-none bg-pink-500/80  rounded-[15px] text-white">
+                    Sponsor
                 </a>
             </div>
         </div>

@@ -1,5 +1,17 @@
-#{
-    color: #6943f1;
+#icon {
+    background-color: rgb(221, 66, 87);
+    width: 20px;
+    height: 15px;
+}
 
-     #110446, #000080 (Navy Blue) #0c003c. 
+@media screen and (max-width: 670px) {
+    #icon:active+#btn {
+        display: flex;
+    }
+}
+
+    #hero h1{
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
