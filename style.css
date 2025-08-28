@@ -1,32 +1,145 @@
 #icon {
-    background-color: rgb(221, 66, 87);
-    width: 20px;
-    height: 15px;
+  background-color: rgb(221, 66, 87);
+  width: 20px;
+  height: 15px;
 }
 
 @media screen and (max-width: 670px) {
-    #icon:active+#btn {
-        display: flex;
-    }
+  #icon:active+#btn {
+    display: flex;
+  }
 }
 
-    #hero h1{
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+#hero h1 {
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .marquee {
-  overflow-xgi: hidden;
-  whitespace: nowrap;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
 }
 
-.marquee-text {
-  display: inline-block;
+.scroll-text {
+  flex-wrap: nowrap;
+  display: flexbox;
   animation: marquee 10s linear infinite;
 }
 
 @keyframes marquee {
-  0% { transform: translateX(220%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(220%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+text {
+  border: 10px solid black;
+  padding: 0 10px;
+  color: white;
+}
+
+.gallary {
+  gap: 1rem;
+  justify-items: center;
+  display: grid;
+  margin: 0 25px;
+  grid-template-columns: repeat(4, 1fr);
+  width: fit-content;
+  justify-self: center;
+
+}
+
+.pic {
+  border-radius: 10px;
+  background-color: #6636e5;
+  background-image: url(https://smfest.org/wp-content/uploads/2025/07/ABU.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  padding: 10px;
+  max-width: 285px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.pic-content {
+  border-radius: 11px;
+  background-color: #08003c;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+}
+
+.pic h4 {
+  font-family: "clash display" sans-serif;
+  font-size: 17px;
+}
+
+.pic p {
+  font-size: 12px;
+  font-family: sora, sans-serif;
+}
+
+.pic img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width:1020px) {
+
+  .gallary {
+    gap: 1.2rem;
+    justify-items: center;
+    display: grid;
+    margin: 0 25px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+
+  }
+
+  .pic {
+    background-color: #6943f1;
+    border-radius: 10px;
+    height: 450px;
+    padding: 10px;
+    max-width: 285px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .pic img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:770px) {
+  .gallary {
+    gap: 1rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+  }
+
+  .pic {
+    height: 200px;
+    width: 165px;
+  }
+
+  .pic img {
+    width: 100%;
+    height: 100%;
+  }
 }
