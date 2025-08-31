@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <style type="text/tailwindcss">
         @theme {
             --color-background: #0c003c;
@@ -31,11 +33,11 @@
 </head>
 
 <body class="bg-background">
-
-    <nav class="pt-7 mx-[2rem] md:mx-[4rem]">
-        <div class="flex items-center justify-between">
+    <nav style="position: fixed; top: 0; z-index: 10; width: 100%;"
+        class="py-9 md:py-7 px-[1.5rem] md:px-[4rem] bg-background">
+        <div style=" display: flex; align-items: center; justify-content: space-between; width: 100%;">
             <div class="w-[40px] md:w-[65px]">
-                <img src="logo.png" alt="logo" class="w-full h-auto" />
+                <img src="logo.png" alt="logo" class="" />
             </div>
             <div id="icon" class=" flex sm:hidden"></div>
             <div id="btn" class="hidden sm:flex gap-4 items-center">
@@ -63,93 +65,138 @@
                 AFRICA UNLOCKED</h1>
             <div class="grid grid-cols-2 mt-12 md:px-3 justify-center gap-6">
                 <a href="#"
-                    class="py-[16px] md:py-6 lg:py-10 text-center text-[16px] lg:text-[28px] font-bold focus:outline-none bg-yellow-500  rounded-[15px] text-background ">
+                    class="py-[16px] md:py-6 lg:py-10 text-center text-[16px] lg:text-[28px] animate__animated animate__fadeInUp font-bold focus:outline-none bg-yellow-500  rounded-[15px] text-background ">
                     Get Ticket
                 </a>
                 <a href="#"
-                    class="py-[16px] md:py-6 lg:py-10 text-center text-[20px] md:text-[16px] lg:text-[28px] font-bold focus:outline-none bg-pink-500/80  rounded-[15px] text-white">
+                    class="py-[16px] md:py-6 lg:py-10 text-center text-[20px] md:text-[16px] lg:text-[28px] animate__animated animate__fadeInUp font-bold focus:outline-none bg-pink-500/80  rounded-[15px] text-white">
                     Sponsor
                 </a>
             </div>
         </div>
 
-        <div class="marquee flex mt-12">
-            <div class="scroll-text flex">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, reiciendis repudiandae impedit
-                    itaque dignissimos recusandae eius quia aliquam, possimus minus voluptatem nulla tempora, laudantium
-                    ducimus aperiam. Corporis magni dicta deleniti?
+        <div class="marquee mt-12 mb-40 py-10">
+            <div class="scroll-text">
+                <p class="text-[25px] text-white flex font-bold">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Minima, reiciendis repudiandae impedit
+                    itaque dignissimos recusandae eius quia aliquam, possimus minus voluptatem nulla tempora.
                 </p>
             </div>
         </div>
     </section>
 
     <section>
-        <h1 class="text-[50px] font-bold mb-10 text-white ml-[25px] mt-50" style="font-family: Arial, Helvetica, sans-serif;">Meet Our Speakers</h1>
+        <h1 class="text-[30px] md:text-[50px] font-bold mb-10 text-white ml-[25px]"
+            style="font-family: Arial, Helvetica, sans-serif;">Meet Our Speakers</h1>
         <div class="gallary">
-            <div class="pic ">
+            <div class="pic  animate__animated animate__fadeInUp">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Ajah Excel</h4>
+                    <p class="text-[7px] md:text-[12px]">CEO, Silicon Africa, Convener, SMFest, International</p>
                 </div>
             </div>
-            <div class="pic">
+            <div class="pic  animate__animated animate__fadeInUp">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
-                </div>
-            </div>
-            <div class="pic">
-                <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
-                </div>
-            </div>
-            <div class="pic">
-                <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
-                </div>
-            </div>
-            <div class="pic">
-                <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Hon. Benjamin Kalu</h4>
+                    <p class="text-[7px] md:text-[12px]">Deputy Speaker, House of Representatives</p>
                 </div>
             </div>
             <div class="pic ">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Abubakar Suleiman</h4>
+                    <p class="text-[7px] md:text-[12px]">CEO, Sterling Bank</p>
                 </div>
             </div>
-            <div class="pic">
+            <div class="pic ">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Odunayo Sanya</h4>
+                    <p class="text-[7px] md:text-[12px]">⁠Executive Director, MTN Foundation</p>
                 </div>
             </div>
-            <div class="pic">
+            <div class="pic ">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Olugbenga Agboola</h4>
+                    <p class="text-[7px] md:text-[12px]">CEO, Flutterwave</p>
                 </div>
             </div>
-            <div class="pic">
+            <div class="pic ">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Obinna Ukachukwu</h4>
+                    <p class="text-[7px] md:text-[12px]">Growth Executive, Sterling Bank</p>
                 </div>
             </div>
-            <div class="pic">
+            <div class="pic ">
                 <div class=" pic-content">
-                    <h4>Ajah Excel</h4>
-                    <p>CEO, Silicon Africa, Convener, SMFest, International</p>
+                    <h4 class="text-[9px] md:text-[17px]">Toyosi Akerele-Ogunsiji</h4>
+                    <p class="text-[7px] md:text-[12px]">CEO, Rise Network</p>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class=" pic-content">
+                    <h4 class="text-[9px] md:text-[17px]">Gideon Osi</h4>
+                    <p class="text-[7px] md:text-[12px]">President/GMD, GOSIMA Group</p>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class=" pic-content">
+                    <h4 class="text-[9px] md:text-[17px]">Ugochukwu Omeogu</h4>
+                    <p class="text-[7px] md:text-[12px]">⁠CEO, Merignos Consulting</p>
+                </div>
+            </div>
+            <div class="pic ">
+                <div class=" pic-content">
+                    <h4 class="text-[9px] md:text-[17px]">Mr. Felix Achibiri</h4>
+                    <p class="text-[7px] md:text-[12px]">Chairman, DFC Holdings</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section>
+        <h1 class="text-[30px] md:text-[50px] font-bold my-10 text-white ml-[25px]"
+            style="font-family: Arial, Helvetica, sans-serif;">Nature of SMFest Event</h1>
+        <div class=" gallary-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
+            <div style="height: fit-content;" class="m-3 rounded-lg p-3 border-white text-white text-center border-1">
+                <img class="h-[224px] w-[100%]"
+                    src="https://smfest.org/wp-content/uploads/2024/12/DSC_7821-scaled.webp">
+                <div class="my-3 border-black border-r-1">
+                    <h1 class="text-[28px] md:text-[35px] font-bold">One Week Digital Skill Bootcamp</h1>
+                    <p class="lg:text-[16px]">Nature of SMFest Event
+                        One Week Digital Skill Bootcamp
+                        A one week digital Skill Bootcamp that trains our audience in Social Media, Digital
+                        Marketing,
+                        Sales and lead genration, Graphics design and </p>
+                </div>
+                <p class="p-[10px] lg:text-[20px]"> APPLY NOW</p>
+            </div>
+            <div style="height: fit-content;" class="m-3 rounded-lg p-3 border-white text-white text-center border-1">
+                <img class="h-[224px] w-[100%]"
+                    src="https://smfest.org/wp-content/uploads/2024/12/DSC_7821-scaled.webp">
+                <div class="my-3 border-black border-r-1">
+                    <h1 class="lg:text-[35px] font-bold">Business Masterclass</h1>
+                    <p class="lg:text-[16px]">SMFest’s Business Masterclasses offer expert-led sessions on market
+                        trends, attention economy, and online sales, empowering professionals to enhance their
+                        digital
+                        skills and business growth.
+                    </p>
+                </div>
+                <p class="p-[10px] lg:text-[20px]"> APPLY NOW</p>
+            </div>
+            <div style="height: fit-content;" class="m-3 rounded-lg p-3 border-white text-white text-center border-1">
+                <img class="h-[224px] w-[100%]"
+                    src="https://smfest.org/wp-content/uploads/2024/12/DSC_7821-scaled.webp">
+                <div class="my-3 border-black border-r-1">
+                    <h1 class="lg:text-[35px] font-bold">
+                        Executive/ Founders' Mixer</h1>
+                    <p class="lg:text-[16px]">The Founders’ Mixer is an exclusive networking event designed to bring
+                        together founders, entrepreneurs, innovators, and investors to foster connections, exchange
+                        insights, and collaborate on driving innovation.</p>
+                </div>
+                <p class="p-[10px] lg:text-[20px]"> APPLY NOW</p>
+            </div>
+        </div>
+    </section>  
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
