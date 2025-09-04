@@ -33,13 +33,13 @@
 </head>
 
 <body class="bg-background">
-    <nav style="position: fixed; top: 0; z-index: 10; width: 100%;"
+    <nav style="position: fixed; top: 0; z-index: 1000; width: 100%;"
         class="py-9 md:py-7 px-[1.5rem] md:px-[4rem] bg-background">
-        <div style=" display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
             <div class="w-[40px] md:w-[65px]">
                 <img src="logo.png" alt="logo" class="" />
             </div>
-            <div id="icon" class=" flex sm:hidden"></div>
+            <button id="icon" class=" flex sm:hidden">btn</button>
             <div id="btn" class="hidden sm:flex gap-4 items-center">
                 <button
                     class="hover:text-background hover:bg-btn-hover bg-btn text-white py-2 px-5 rounded-3xl text-[14px]">
@@ -196,8 +196,156 @@
                 <p class="p-[10px] lg:text-[20px]"> APPLY NOW</p>
             </div>
         </div>
-    </section>  
+    </section>
+
+    <section>
+        <div class="grid p-[10px] my-20 md:max-w-[800px] lg:max-w-[100%] md:p-10 lg:grid-cols-2 gap-25 items-stretch">
+            <!-- Image Section -->
+            <div class="relative hidden md:flex rounded-2xl h-full">
+                <div class="shadow-[10px_10px_0_#37E3AF] z-0 rounded-2xl shadow-[0_0_35px_rgba(0,0,0,0.25)] h-full">
+                    <img src="https://smfest.org/wp-content/uploads/2025/04/DSC_0476-scaled.webp"
+                        class="w-full h-full object-cover rounded-2xl" />
+                </div>
+                <div
+                    class="absolute bottom-[-20px] right-[-20px] w-[402px] bg-background p-[30px] z-10 rounded-2xl shadow-[10px_10px_0_#37E3AF]">
+                    <hr class="border-0 h-1 bg-white mb-2" />
+                    <h1 class="font-bold text-[55px] text-white">5 Years</h1>
+                </div>
+            </div>
+
+            <!-- Text Section -->
+            <div class="text-white">
+                <p class="font-bold text-[#EE2F5B]">About Us</p>
+                <h2 class="text-[50px] py-3 font-bold">Connect. Inovate. Grow</h2>
+                <p class="py-3">
+                    Join SMFest 2025 to unlock digital opportunities and drive business growth. Business owners,
+                    marketers, and innovators will gain invaluable insights to scale results and engage customers. Get
+                    your tickets now or sponsor to showcase your brand at the forefront of Africa’s digital revolution!
+                </p>
+
+                <!-- Stats Grid -->
+                <div
+                    class="border-3 my-3 grid rounded-2xl md:rounded-[0px] px-10 py-10 md:px-10 md:py-0 lg:p-0   grid-cols-1 md:grid-cols-2 gap-10 ">
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button
+                    class="p-[10px_24px] text-background hover:bg-background border-black font-bold border-1 hover:text-white bg-[#37E3AF]">
+                    LEARN MORE
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="px-[5px] lg:px-20">
+            <h1 class="text-white text-[50px] py-3 font-bold">The Best Stage in Africa</h1>
+
+            <div class="grid grid-cols-[3fr_7fr] my-10 gap-7">
+                <div class="image h-[400px] lg:h-[450px] shadow-[10px_10px_0_#37E3AF] rounded-2xl">
+                    <img src="https://smfest.org/wp-content/uploads/2025/04/DSC_0476-scaled.webp"
+                        class="w-full h-full object-cover rounded-2xl">
+                </div>
+                <div class="image h-[400px] lg:h-[450px] shadow-[10px_10px_0_#37E3AF] rounded-2xl">
+                    <img src="https://smfest.org/wp-content/uploads/2025/04/DSC_0476-scaled.webp"
+                        class="w-full h-full object-cover rounded-2xl">
+                </div>
+            </div>
+            <div class="grid gird-row lg:grid-cols-[4fr_6fr] my-12 gap-7">
+                <div class="image h--[350px] md:h-[400px] lg:h-[450px] shadow-[10px_10px_0_#37E3AF] rounded-2xl">
+                    <img src="https://smfest.org/wp-content/uploads/2025/04/DSC_0476-scaled.webp"
+                        class="w-full h-full object-cover rounded-2xl">
+                </div>
+                <div class="image h-[400px] lg:h-[450px] shadow-[10px_10px_0_#37E3AF] rounded-2xl">
+                    <img src="https://smfest.org/wp-content/uploads/2025/04/DSC_0476-scaled.webp"
+                        class="w-full h-full object-cover rounded-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="grid p-[10px] my-20 md:max-w-[800px] lg:max-w-[100%] md:p-10 lg:grid-cols-2 gap-25 items-stretch">
+            <!-- Text Section -->
+            <div class="text-white">
+                <p class="text-[#EE2F5B]">Sponsor SMFest</p>
+                <h2 class="text-[50px] py-3 font-bold">The Best<br>
+                    Visibility for every Business</h2>
+                <p class="py-3">
+                    Join SMFest 2025 to unlock digital opportunities and drive business growth. Business owners,
+                    marketers, and innovators will gain invaluable insights to scale results and engage customers. Get
+                    your tickets now or sponsor to showcase your brand at the forefront of Africa’s digital revolution!
+                </p>
+
+                <!-- Stats Grid -->
+                <div
+                    class="border-3 my-3 grid rounded-2xl md:rounded-[0px] px-10 py-10 md:px-10 md:py-0 lg:p-0   grid-cols-1 md:grid-cols-2 gap-10 ">
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                    <div class="table">
+                        <p>Participant</p>
+                        <hr class="border-0 h-1 bg-white">
+                        <span class="text-[40px] md:text-[55px] font-bold">17K+</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <button
+                    class="p-[10px_24px] text-background hover:bg-background border-black font-bold border-1 hover:text-white bg-[#37E3AF]">
+                    LEARN MORE
+                </button>
+            </div>
+
+            <!-- Image Section -->
+            <div class="relative hidden md:flex rounded-2xl h-full">
+                <div class="shadow-[10px_10px_0_#37E3AF] z-0 rounded-2xl shadow-[0_0_35px_rgba(0,0,0,0.25)] h-full">
+                    <img src="https://smfest.org/wp-content/uploads/2025/04/DSC_0476-scaled.webp"
+                        class="w-full h-full object-cover rounded-2xl" />
+                </div>
+                <div
+                    class="absolute bottom-[-20px] right-[-20px] w-[402px] bg-background p-[30px] z-10 rounded-2xl shadow-[10px_10px_0_#37E3AF]">
+                    <hr class="border-0 h-1 bg-white mb-2" />
+                    <h1 class="font-bold text-[55px] text-white">5 Years</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

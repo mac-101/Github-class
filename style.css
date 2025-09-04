@@ -4,13 +4,9 @@
   height: 15px;
 }
 
-@media screen and (max-width: 670px) {
-  #icon:active+#btn {
-    display: flex;
-  }
-}
 
-#hero h1, .gallary-2 h1 {
+#hero h1,
+.gallary-2 h1 {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -18,7 +14,7 @@
 
 .marquee {
   overflow-x: hidden;
-  background-color: #0c003c75 ;
+  background-color: #0c003c75;
   width: 100%;
 }
 
@@ -28,7 +24,7 @@
   animation: marquee 15s linear infinite;
 }
 
-.scroll-text p{
+.scroll-text p {
   width: 2300px;
 }
 
@@ -88,7 +84,7 @@ text {
   font-family: "clash display" sans-serif;
 }
 
-.pic p { 
+.pic p {
   font-family: sora, sans-serif;
 }
 
@@ -97,6 +93,11 @@ text {
   width: 100%;
   height: 100%;
 }
+
+.table p {
+  padding: 10px 0;
+}
+
 
 @media screen and (max-width:1020px) {
 
@@ -146,4 +147,23 @@ text {
     width: 100%;
     height: 100%;
   }
+
+  .table {
+    text-align: center;
+  }
+
+  .hello {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: #6a5aa7;
+    width: 200px;
+    align-items: start;
+    padding: 20px;
+    height: 100vh;
+    top: 80px;
+  }
+
 }
