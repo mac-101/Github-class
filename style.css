@@ -6,7 +6,8 @@
 
 
 #hero h1,
-.gallary-2 h1 {
+h1,
+h2 {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -70,6 +71,18 @@ text {
   align-items: flex-end;
 }
 
+.key {
+  padding: 20px 0;
+  background-color: red;
+  height: 230px;
+  min-width: 230px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.over {
+  overflow-x: hidden;
+}
 
 .pic-content {
   border-radius: 11px;
@@ -98,6 +111,13 @@ text {
   padding: 10px 0;
 }
 
+.sm {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #F43F54;
+}
 
 @media screen and (max-width:1020px) {
 
@@ -109,6 +129,10 @@ text {
     grid-template-columns: repeat(3, 1fr);
     justify-self: center;
 
+  }
+
+  .smtext {
+    text-align: left;
   }
 
   .pic {
@@ -136,6 +160,10 @@ text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: fit-content;
+  }
+
+  .smtext {
+    text-align: center;
   }
 
   .pic {
