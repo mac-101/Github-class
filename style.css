@@ -4,7 +4,6 @@
   height: 15px;
 }
 
-
 #hero h1,
 h1,
 h2 {
@@ -119,6 +118,11 @@ text {
   color: #F43F54;
 }
 
+.footer{
+  color: white;
+  display: grid;
+}
+
 @media screen and (max-width:1020px) {
 
   .gallary {
@@ -150,6 +154,15 @@ text {
     border-radius: 10px;
     width: 100%;
     height: 100%;
+  }
+  .footer{
+    display: block;
+    text-align: center;
+  }
+  .logo{
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
