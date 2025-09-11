@@ -58,7 +58,7 @@ text {
 .pic {
   border-radius: 10px;
   background-color: #6636e5;
-  background-image: url(https://smfest.org/wp-content/uploads/2025/07/ABU.webp);
+  /* background-image: url(https://smfest.org/wp-content/uploads/2025/07/ABU.webp); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
