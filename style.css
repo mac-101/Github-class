@@ -118,9 +118,14 @@ text {
   color: #F43F54;
 }
 
-.footer{
+.footer {
   color: white;
   display: grid;
+}
+
+.transgallery {
+  background-color: white;
+  background-image: radial-gradient(at center center, #2714A2 24%, #0C024E 66%);
 }
 
 @media screen and (max-width:1020px) {
@@ -155,11 +160,13 @@ text {
     width: 100%;
     height: 100%;
   }
-  .footer{
+
+  .footer {
     display: block;
     text-align: center;
   }
-  .logo{
+
+  .logo {
     background-color: red;
     margin-left: auto;
     margin-right: auto;
